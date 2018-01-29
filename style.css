@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+td.active {
+    background-clip: content-box;
+    background-color: yellow;
+}
+
+tr:nth-child(even) {
+    background-color: #aec7cc;
+}
+
+tfoot td{
+    text-align: right;
+}
+
+thead, tfoot {
+    background-color: rgba(161, 177, 152, 0.8);
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    width: 50%;
+    padding:10px;
+    margin: 10px auto 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+}
+
+input:focus{
+    box-shadow: 0 0 10px 3px rgba(120, 120, 120, .7);
+}

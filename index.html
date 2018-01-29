@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="script.js"></script>
+    <script src="bower_components/mustache.js/mustache.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="root"></div>
+
+<script id="template" type="x-tmpl-mustache">
+<input type="search" placeholder='enter item'>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>location</th>
+            <th>currency</th>
+        </tr>
+    </thead>
+    <tbody>
+            {{#items}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{location}}</td>
+                    <td>{{currency}}</td>
+                </tr>
+            {{/items}}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan=4 >Total: {{total}}</td>
+        </tr>
+    </tfoot>
+</table>
+</script>
+</body>
+</html>
