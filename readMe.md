@@ -1,0 +1,1 @@
+Open the folder of this project in your CLI and run the command "npm i", after loading some cases open the file 'index.html' in your browser.
